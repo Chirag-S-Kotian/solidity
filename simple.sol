@@ -24,7 +24,7 @@ contract Simple{
     }
 
     //calldata ,memory,storage
-    function addPerson(String memory _name,uint256 _favNumber) public {
+    function addPerson(string memory _name,uint256 _favNumber) public {
         listOfPeople.push( Person( _favNumber, _name));
         nameToFavNumber[_name] = _favNumber;
     }
