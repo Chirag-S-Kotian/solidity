@@ -11,5 +11,7 @@ contract FundMe{
         // Have a minimum $ sent 
         // 1. How do we send ETH to this contract? 
         require(msg.value > 1e18 , "didn't send enough ETH");
+        // what is a revert?
+        // undo any actions that have been done, and send the remaaining gas back
     }
 }
